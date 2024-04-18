@@ -5,25 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Josefin+Sans">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 <body>
-  
-  <div class="card">
-    <div class="left">
-      <img src="images/logo.svg" alt="Base Apparel logo">
-      <h1>We're coming soon</h1>
-      <p>Hello fellow shoppers! We're currently building our new fashion store. 
-        Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <input type="email" id="email" pattern=".+@example\.com" size="30" placeholder="Email Address" required />
-    </div>
-    <div class="right">
-      <img src="images/hero-desktop.jpg" alt="Hero desktop">
-    </div>
+  <div class="top-left">
+    <img class="logo" src="images/logo.svg" alt="Base Apparel logo">
+  </div>
+  <div class="bottom-left">
+    <h1><span>We're</span> coming soon</h1>
+    <p>Hello fellow shoppers! We're currently building our new fashion store. 
+      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form action="" id="signup">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" pattern=".+@example\.com" size="30" placeholder="Email Address" required />
+        <button type="submit" form="signup" value="Submit">
+          <img class="logo" src="images/icon-arrow.svg" alt="Arrow right">
+        </button>
+        <p class="email-error">Please provide a valid email</p>
+      </form>
+    
+  </div>
+  <div class="right">
+    <img class="desktop" src="images/hero-desktop.jpg" alt="Hero desktop">
+    <img class="mobile" src="images/hero-mobile.jpg" alt="Hero mobile">
   </div>
 </body>
 </html>
