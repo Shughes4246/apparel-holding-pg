@@ -165,3 +165,10 @@ h1 span {
         display: none;
     }
 }
+
+@media (min-width: 64em) {
+    .top-left,
+    .bottom-left {
+        margin: 0 20%;
+    }
+}
